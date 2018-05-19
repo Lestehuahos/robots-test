@@ -1,0 +1,40 @@
+.wrapper {
+    width: 500px;
+    height: 385px;
+    margin: 0 auto;  
+}
+
+.bg-success {
+    background-color: #008000;
+}
+
+.bg-error {
+    background-color: #e55454;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.table {
+	width: 100%;
+}
+
+.search-form {
+	background: url("/style/images/logo.png") no-repeat;
+	background-position: center;
+	height: 316px;
+	padding-top: 282px;
+}
+
+.search-form input {
+    background: #fff none repeat scroll 0 0;
+    width: 422px !important;
+}
+
