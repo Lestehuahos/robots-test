@@ -56,9 +56,9 @@ function hostVerification($str) {
 	global $obj2;
 	
 	//Находим вхождения директивы Host
-	preg_match_all("/Host/", $str, $values);
-
-	if($values) {
+	preg_match("/Host/", $str, $values);
+	
+	if($values) {		
 		$obj2->status = "ОК";
 		$obj2->condition = "Директива Host указана";
 		$obj2->recommends = "Доработки не требуются";
@@ -80,7 +80,7 @@ function hostQuantity($str) {
 	global $obj3;
 	
 	//Находим вхождения директивы Sitemap
-	preg_match_all("/Host/", $str, $values);
+	preg_match("/Host/", $str, $values);
 	
 	// Если количество директив Host - больше нуля
 	if(count($values) > 0) {
@@ -143,7 +143,7 @@ function sitemapVerification($str) {
 	global $obj5;
 	
 	//Находим вхождения директивы Sitemap
-	preg_match_all("/Sitemap:(.*)/", $str, $values);
+	preg_match("/Sitemap/", $str, $values);
 
 	if($values) {
 		$obj5->status = "ОК";
